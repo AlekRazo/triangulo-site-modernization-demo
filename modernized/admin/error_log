@@ -1,0 +1,29 @@
+[19-Aug-2016 17:09:57 America/Chicago] PHP Warning:  include_once(../controller/loginCtrl.php): failed to open stream: No such file or directory in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:09:57 America/Chicago] PHP Warning:  include_once(): Failed opening '../controller/loginCtrl.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:09:57 America/Chicago] PHP Fatal error:  Class 'loginCtrl' not found in /home1/triangulo/public_html/admin/index.php on line 222
+[19-Aug-2016 17:10:03 America/Chicago] PHP Warning:  include_once(../controller/loginCtrl.php): failed to open stream: No such file or directory in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:10:03 America/Chicago] PHP Warning:  include_once(): Failed opening '../controller/loginCtrl.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:10:03 America/Chicago] PHP Fatal error:  Class 'loginCtrl' not found in /home1/triangulo/public_html/admin/index.php on line 222
+[19-Aug-2016 17:10:22 America/Chicago] PHP Warning:  include_once(../controller/loginCtrl.php): failed to open stream: No such file or directory in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:10:22 America/Chicago] PHP Warning:  include_once(): Failed opening '../controller/loginCtrl.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:10:22 America/Chicago] PHP Fatal error:  Class 'loginCtrl' not found in /home1/triangulo/public_html/admin/index.php on line 222
+[19-Aug-2016 17:10:29 America/Chicago] PHP Warning:  include_once(../controller/loginCtrl.php): failed to open stream: No such file or directory in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:10:29 America/Chicago] PHP Warning:  include_once(): Failed opening '../controller/loginCtrl.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:10:29 America/Chicago] PHP Fatal error:  Class 'loginCtrl' not found in /home1/triangulo/public_html/admin/index.php on line 222
+[19-Aug-2016 17:12:48 America/Chicago] PHP Warning:  include_once(../controller/loginCtrl.php): failed to open stream: No such file or directory in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:12:48 America/Chicago] PHP Warning:  include_once(): Failed opening '../controller/loginCtrl.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home1/triangulo/public_html/admin/index.php on line 221
+[19-Aug-2016 17:12:48 America/Chicago] PHP Fatal error:  Class 'loginCtrl' not found in /home1/triangulo/public_html/admin/index.php on line 222
+[19-Aug-2016 17:26:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:29:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:29:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:29:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:33:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:35:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:35:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:38:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/verinicio.php on line 24
+[19-Aug-2016 17:38:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/verinicio.php on line 24
+[19-Aug-2016 17:51:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/verinicio.php on line 24
+[19-Aug-2016 17:51:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/verinicio.php on line 24
+[19-Aug-2016 17:53:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/inicio.php on line 25
+[19-Aug-2016 17:53:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/verinicio.php on line 24
+[19-Aug-2016 17:53:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/triangulo/public_html/admin/modules/verinicio.php on line 24

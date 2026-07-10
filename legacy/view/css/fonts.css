@@ -1,0 +1,14 @@
+@font-face {
+    font-family: SansBoldFont;
+    src: url(../fonts/TheSansBold-Plain_14.otf);   
+}
+
+@font-face {
+    font-family: AllStarResort;
+    src: url(../fonts/AldotheApache.ttf);
+}
+
+@font-face {
+    font-family: AdlotheApache;
+    src: url("../fonts/All Star Resort.ttf");
+}

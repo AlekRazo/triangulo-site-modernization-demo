@@ -1,0 +1,85 @@
+.col-xs-1-8,
+.col-sm-1-8,
+.col-md-1-8,
+.col-lg-1-8,
+.col-xs-2-8,
+.col-sm-2-8,
+.col-md-2-8,
+.col-lg-2-8,
+.col-xs-3-8,
+.col-sm-3-8,
+.col-md-3-8,
+.col-lg-3-8{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-1-8 {
+    width: 12.5%;
+    float: left;
+}
+
+.col-xs-2-8 {
+    width: 25%;
+    float: left;
+}
+
+.col-xs-3-8 {
+    width: 37.5%;
+    float: left;
+}
+
+/**/
+
+@media (min-width: 768px) {    
+    .col-sm-1-8 {
+        width: 12.5%;
+        float: left;
+    }
+    
+    .col-sm-2-8 {
+        width: 25%;
+        float: left;
+    }
+    
+    .col-sm-3-10 {
+        width: 37.5%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {    
+    .col-md-1-8 {
+        width: 12.5%;
+        float: left;
+    }
+    
+    .col-md-2-8 {
+        width: 25%;
+        float: left;
+    }
+    
+    .col-md-3-10 {
+        width: 37.5%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {    
+    .col-lg-1-8 {
+        width: 12.5%;
+        float: left;
+    }
+    
+    .col-lg-2-8 {
+        width: 25%;
+        float: left;
+    }
+    
+    .col-lg-3-10 {
+        width: 37.5%;
+        float: left;
+    }
+}

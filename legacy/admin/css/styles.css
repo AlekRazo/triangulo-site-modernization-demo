@@ -1,0 +1,14 @@
+/* Datepicker offset due to Bootstrap navbar body offset */
+.datepicker-dropdown{
+    margin-top: 50px;
+}
+
+.img_panel_eventos{
+    max-width: 200px;
+}
+
+@media (max-width: 749px) {
+    .img_panel_eventos{
+        max-width: 100px;
+    }
+}

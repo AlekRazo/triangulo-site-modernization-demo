@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Send request via index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)\.(html|php)$ index.php?load=page&fileName=$0 [L]
+</IfModule>
+
+php_value display_errors On
+#php_value mbstring.http_input auto
+php_value date.timezone America/Tijuana

@@ -1,0 +1,64 @@
+<div id="banner_carousel" class="row">
+    <div class="col-xs-12">
+        <!-- <img class="img-responsive" src="view/img/eventos/calendario.png"> -->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <h2 class="text-justify titulo_contacto">Nuestra ubicacion:</h2>
+        <address>
+            <p>Río Colorado 2396 Col. Marron, Tijuana, B.C.</p>
+            <p>Tel: (664) 686-3688</p>
+        </address>
+        <iframe id="mapaTriangulo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1682.0760347372736!2d-117.0228693420068!3d32.522085256860436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94848b4c8b81f%3A0x8e5db3dafa43ed1c!2sBillar+Triangulo!5e0!3m2!1ses-419!2smx!4v1461624814501" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <h2 class="text-justify titulo_contacto">Contacto:</h2>
+        <form id="form_contacto" class="form-horizontal" role="form" method="post" action="index.php">
+            <!-- Name field -->
+            <div class="form-group">
+              <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="" required>
+              </div>
+            </div>
+            <!-- End of Name field -->
+            <!-- Email field -->
+            <div class="form-group">
+              <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo" value="" required>
+              </div>
+            </div>
+            <!-- End of Email field -->
+            <!-- Subject field -->
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" value="">
+              </div>
+            </div>
+            <!-- End of Subject field -->
+            <!-- Message field -->
+            <div class="form-group">
+              <div class="col-sm-12">
+                  <textarea class="form-control" id="message" rows="2" name="message" placeholder="Mensaje" required></textarea>
+              </div>
+            </div>
+            <!-- End of Message field -->
+            <!-- Alert message -->
+            <div id="msgSubmit" class="form-group hidden">
+              <div class="col-sm-12 text-center">
+                <!-- Will be used to display an alert to the user -->
+                Gracias por su mensaje, estaremos en contacto.
+              </div>
+            </div>
+            <!-- End of Alert message -->
+            <!-- Submit button -->
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-danger">
+              </div>
+            </div>
+            <!-- End of Submit button -->
+          </form>
+    </div>
+</div>

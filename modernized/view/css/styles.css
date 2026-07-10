@@ -1,0 +1,409 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/04/2016, 09:31:35 AM
+    Author     : Manuel-IT
+*/
+
+/* General */
+body{
+    background-image: url("../img/principal/fondo.png");    
+    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    font-family: SansBoldFont;
+    color: white;
+}
+
+.container { max-width: 670px; }
+
+/* Menu */
+@media (max-width: 767px) {
+    #banner{
+        visibility: hidden;
+        display: none;
+        margin: auto;
+    }
+    
+    #navbar1{
+        background-color: #B10000;
+    }
+    #menu_bar li a:hover{
+        background-color: #EE1C24;
+    }
+
+    #menu_bar li a:active {
+        background-color: #EE1C24;
+    }
+
+    #menu_bar li a:visited {
+        background-color: #EE1C24;
+    }
+
+    #menu_bar li a:focus {
+        background-color: #EE1C24;
+    }    
+}
+
+@media (min-width: 768px) {
+    .img_footer{
+        visibility: hidden;
+        display: none;
+        margin: auto;
+    }
+    
+    #navbar1 {
+        padding-top: 5%;
+        padding-right: 0%
+    }
+    
+    .menu-image-left { 
+        background-image: url("../img/principal/menu-left.png");    
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .menu-image-mid { 
+        background-image: url("../img/principal/menu-mid.png");  
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .menu-image-right { 
+        background-image: url("../img/principal/menu-right.png");  
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #banner_calendario{
+        font-size: 12px;
+    }
+    
+    #menu_bar li a:link{
+        background-color: transparent;
+    }
+
+    #menu_bar li a:hover{
+        background-color: transparent;
+    }
+
+    #menu_bar li a:active {
+        background-color: transparent;
+    }
+
+    #menu_bar li a:visited {
+        background-color: transparent;
+    }
+
+    #menu_bar li a:focus {
+        background-color: transparent;
+    }
+}
+
+#navbar1 li a {
+    color: white;
+}
+
+#img_brand{
+    max-width: 105px;
+}
+
+.navbar-default .navbar-toggle{
+    margin-top: 20%;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle :active{
+    background-color: transparent;
+}
+
+.navbar-brand {
+    min-height: 120px;
+}
+
+.navbar {
+    min-height: 120px;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+/* Content */
+
+#banner{
+    background-image: url("../img/principal/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#banner_calendario{
+    background-image: url("../img/principal/banner-calendario.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: AllStarResort;
+}
+
+#banner_carousel{
+    margin-top: 2%;
+}
+
+#encabezado-eventos { 
+    background-image: url("../img/home/eventos.png");    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}
+
+#encabezado-promociones { 
+    background-image: url("../img/home/promociones.png");    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}
+
+.text_contacto{
+    margin-top: 0px;
+    font-family: AllStarResort;
+}
+
+.img_calendario{
+    padding-top: 8px;
+    width: 100%
+}
+
+.text-banner{
+    font-family: AdlotheApache;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.text-banner-calendario{
+    font-family: AllStarResort;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.col_header{
+    padding-top: 10px;
+}
+
+.sports_banner{
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+
+#row_bar{
+    margin-top: 2%;
+}
+
+.img_logos {
+    max-width: 100%;
+    max-height: 80px;
+    margin: auto;
+}
+
+/* Calendario */
+.panel-body{
+    color: #333333;
+}
+
+#result{
+    background-color: transparent;
+    border: none;
+}
+
+#encabezado_resultados{
+    font-family: SansBoldFont;
+}
+.titulo_resultados{
+    font-family: SansBoldFont;
+}
+
+.titulo_contacto{
+    font-family: AllStarResort;
+}
+
+.panel-group .panel{
+    background-color: transparent;
+    border: none;
+}
+
+.panel-default > .panel-heading {
+    background-color: transparent;
+    border: none;
+}
+
+.panel-collapse{
+    background-color: #f5f5f5;
+}
+
+.background_red {
+    background-image: url("../img/eventos/barr-red.png");
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+    border: none;
+}
+
+.background_blue { 
+    background-image: url("../img/eventos/barr-blue.png");
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+    border: none;
+}
+.title_categoria{
+    font-family: AllStarResort;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mapaTriangulo{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+}
+
+/*#headingFIFA{
+    background-image: url("../img/eventos/futbol.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}*/
+
+/*#headingNFL{
+    background-image: url("../img/eventos/nfl.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}*/
+
+/*#headingNBA{
+    background-image: url("../img/eventos/nba.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}*/
+
+/*#headingUFC{
+    background-image: url("../img/eventos/ufc.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}*/
+
+/*#headingBox{
+    background-image: url("../img/eventos/boxeo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: AllStarResort;
+}*/
+
+
+
+/* Footer */
+@media (max-width: 767px) {
+    .img_footer{
+            visibility: hidden;
+            display: none;
+            margin: auto;
+    }
+}
+
+#social_networks_list ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#social_networks_list ul li {
+    display: inline-block;
+    width: 10%;
+}
+
+textarea{
+    resize: none;
+}
+
+.img_footer{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.img_footer_logos{
+    width: 100%;
+    margin: 0px;
+}
+
+footer {
+    background-image: url("../img/footer/fondo.png");    
+    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 15px;
+}
+/* End Footer */
+
+.img-logos-menu{
+    min-height: 33.33px;
+    max-height: 50px;
+    min-width: 33.33px;
+    max-width: 50px;
+}
+
+.img-calendario-menu{
+    height: 50px;
+    width: 100%;
+}
+
+@media(min-width: 480px){
+    .filler{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    #social_networks_row{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px){
+    #social_networks_list{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (max-width: 479px){
+    #social_networks_list{
+        visibility: hidden;
+        display: none;
+    }
+}
