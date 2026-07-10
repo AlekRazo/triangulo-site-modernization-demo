@@ -3,6 +3,8 @@
 /*
  * Manejo de variables, para el manejo de las solicitudes POST. y GET.
  */
+require_once 'config/env.php';
+Env::load(__DIR__ . '/.env');
 
 if($_POST)
 {

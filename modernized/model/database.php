@@ -12,22 +12,35 @@
  * @author Manuel-IT
  */
 class database {
-    private $conexion;
+    private $conexion = null;
+
+    public function __construct() {
+        $this->conectar();
+    }
+
+    public function __destruct() {
+        if($this->conexion !== null) {
+            $this->desconectar();
+        }
+    }
     
     /*
      * Conexion a la base de datos
      */
     public function conectar() {
-        if(!isset($conexion)){
-            //$this->conexion = new mysqli("localhost", "triangulo", "5Trzca8malJ%", "triangul_db");
-            //$this->conexion = new mysqli("localhost", "root", "", "triangulo");
-			$this->conexion = new mysqli("sql108.infinityfree.com", "if0_42354313", "RQ2dfsSQVhsaaR", "if0_42354313_triangulo");
-                        
+        if($this->conexion === null){
+            $this->conexion = new mysqli(
+                Env::get('DB_HOST'),
+                Env::get('DB_USER'),
+                Env::get('DB_PASS'),
+                Env::get('DATABASE')
+            );
+
             if($this->conexion->connect_error){
                 die($this->conexion->connect_error);
             }
             
-            if (!$this->conexion->set_charset("utf8")) {
+            if (!$this->conexion->set_charset("utf8mb4")) {
                 printf("Error cargando el conjunto de caracteres utf8: %s\n", $mysqli->error);
                 exit();
             }

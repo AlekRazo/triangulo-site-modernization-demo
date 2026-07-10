@@ -11,8 +11,9 @@ class loginCtrl {
     
     public function login($usuario, $password) {
         $model = new loginModel();
-        
-        if($model->login($usuario, $password)){
+        $result = $model->login($usuario, $password);
+
+        if($result){
             $_SESSION['user'] = $usuario;
             echo 'success';
         }

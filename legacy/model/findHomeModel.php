@@ -8,16 +8,12 @@ require_once 'database.php';
  */
 class findHomeModel extends database{    
     public function obtenerCincoAnuncios($seccion) {        
-        $this->conectar();
         $query = $this->consulta("SELECT * FROM " .$seccion. " LIMIT 5");
         
         if($query->num_rows > 0){
             while ($fetchData = $query->fetch_assoc()){
                 $data[] = $fetchData;
             }
-            
-            $this->desconectar();
-            
             return $data;
         }
         else{
@@ -26,16 +22,14 @@ class findHomeModel extends database{
     }
     
     public function obtenerAnuncios($seccion) {        
-        $this->conectar();
+
         $query = $this->consulta("SELECT * FROM " .$seccion);
         
         if($query->num_rows > 0){
             while ($fetchData = $query->fetch_assoc()){
                 $data[] = $fetchData;
             }
-            
-            $this->desconectar();
-            
+
             return $data;
         }
         else{
@@ -43,13 +37,12 @@ class findHomeModel extends database{
         }
     }
     
-    public function obtenerAnuncioPorID($id, $seccion) {        
-        $this->conectar();
+    public function obtenerAnuncioPorID($id, $seccion) {
         $query = $this->consulta("SELECT * FROM ".$seccion." WHERE id='$id'");
         
         if($query->num_rows > 0){
             $data = $query->fetch_row();
-            $this->desconectar();
+
             return $data;
         }
         else{
@@ -57,8 +50,7 @@ class findHomeModel extends database{
         }
     }
     
-    public function obtenerAnunciosActivos($seccion) {        
-        $this->conectar();
+    public function obtenerAnunciosActivos($seccion) {
         $query = $this->consulta("SELECT * FROM ".$seccion ." WHERE activo = 1");
         
         if($query->num_rows > 0){
@@ -66,8 +58,6 @@ class findHomeModel extends database{
                 $data[] = $fetchData;
             }
             
-            $this->desconectar();
-            
             return $data;
         }
         else{
@@ -75,13 +65,12 @@ class findHomeModel extends database{
         }
     }
     
-    public function obtenerCuentaAnunciosActivos($seccion) {        
-        $this->conectar();
+    public function obtenerCuentaAnunciosActivos($seccion) {
         $query = $this->consulta("SELECT COUNT(*) FROM ".$seccion ."WHERE activo = 1");
         
         if($query->num_rows > 0){
             $data = $query->fetch_row();
-            $this->desconectar();
+
             return $data;
         }
         else{

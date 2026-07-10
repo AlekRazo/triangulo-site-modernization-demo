@@ -9,13 +9,17 @@ $(document).ready(function(){
             type: 'POST',
             url: "index.php",
             data: "user=" + usuario + "&pass=" + pass,
-            success: function (result) {                
+            success: function (result) {      
+                console.log(result);          
                 if(result === "success"){
                     window.location.replace("index.php");
                 }
                 else{
                     alert("No existe el usuario o la contraseña no es correcta.");
                 }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error en la petición:', error);
             }
         });
     });

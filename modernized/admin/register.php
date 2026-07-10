@@ -1,14 +1,15 @@
 <?php
 // registration.php
 // Always use PDO for secure, prepared SQL interactions
-require_once '../config/env.php';
-Env::load(__DIR__ . '/.env');
+//$this->conexion = new mysqli("localhost", "triangulo", "5Trzca8malJ%", "triangul_db");
+//$this->conexion = new mysqli("localhost", "root", "", "triangulo");
+//$this->conexion = new mysqli("sql108.infinityfree.com", "if0_42354313", "RQ2dfsSQVhsaaR", "if0_42354313_triangulo");
 
-$pdo = new PDO('mysql:host='.Env::get('DB_HOST').';dbname='.Env::get('DATABASE').';charset=utf8mb4', Env::get('DB_USER'), Env::get('DB_PASS'));
+$pdo = new PDO('mysql:host=sql108.infinityfree.com;dbname=if0_42354313_triangulo;charset=utf8mb4', 'if0_42354313', 'RQ2dfsSQVhsaaR');
 
-$username = "mrazo";
-$password = "password123";
-$correo = "correo@mail.com";
+$username = "admin";
+$password = "bll5TriB@r";
+$correo = "ic.manuel.razo@gmail.com";
 
 // 1. Generate a secure, randomized one-way hash
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);

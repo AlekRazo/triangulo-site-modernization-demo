@@ -10,7 +10,17 @@ class mailCtrl {
     public function __construct() {
     }
     
-    public function enviarCorreo() {            
+    public function enviarCorreo() {  
+        echo '<pre>';
+        echo 'POST:';
+        print_r($_POST);
+        echo '</pre>';
+                
+        echo '<pre>';
+        echo 'REQUEST:';
+        print_r($_REQUEST);
+        echo '</pre>';
+          
         $name = $_POST['name'];
         $email = $_POST['email'];
         $subject = isset($_POST['subject']) ? $_POST['subject'] : 'Sin asunto';
@@ -59,8 +69,7 @@ class mailCtrl {
                 echo "Mail failed, but no PHP error message was captured.";
             }
         } else {
-            //echo "Mail accepted by the local mail server.";
-            echo 'success';
+            echo "Mail accepted by the local mail server.";
         }
     }
 }

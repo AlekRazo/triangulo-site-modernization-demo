@@ -1,0 +1,9 @@
+# NetBeans specific local configuration
+# nbproject/private/
+# nbproject/project.properties
+# nbproject/project.xml.bak
+
+# Optional: Ignore all NetBeans config if you are the only developer using it
+nbproject/
+
+.env

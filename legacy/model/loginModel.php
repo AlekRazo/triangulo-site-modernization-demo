@@ -1,5 +1,5 @@
 <?php
-
+require_once 'database.php';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,21 +12,13 @@
  * @author Manuel-IT
  */
 class loginModel extends database {
-    //put your code here
-    public function __construct() {}
-    
     public function login($user, $pass) {
-        $this->conectar();
-        $query = $this->consulta("SELECT nombre, password FROM usuarios WHERE nombre='$user');
+        $query = $this->consulta("SELECT nombre, password FROM usuario WHERE nombre='$user'");
 
         if($query->num_rows > 0){
-            while ($fetchData = $query->fetch_assoc()){
-                $data[] = $fetchData;
-            }
+            $data = $query->fetch_assoc();
             
-            $this->desconectar();
-            
-            if($user === $data["nombre"] && password_verify($password, $data["password"])){
+            if($user === $data["nombre"] && password_verify($pass, $data["password"])){
                 return TRUE;
             }
             else{
@@ -38,17 +30,4 @@ class loginModel extends database {
             return FALSE;
         }
     }
-
-    //Comentario de prueba
-
-    /*
-    public function login($user, $pass) {
-        $loginData = include '../config/access.php';
-        if($user === $loginData["user"] && $pass === $loginData["password"]){
-            return TRUE;
-        }
-        else{
-            return FALSE;
-        }
-    }*/
 }

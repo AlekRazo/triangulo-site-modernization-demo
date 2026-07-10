@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once '../config/env.php';
+Env::load(dirname(__DIR__, 1).'/.env');
 
 if($_SESSION){
     if($_POST){        
